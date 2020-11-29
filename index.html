@@ -24,19 +24,38 @@
                     <div id="recipeContent" class="mainContent">
                         <ul id="recipeList">
                         </ul>
-                        <Textarea>
+                        <Textarea id="recipeText">
                 
                         </Textarea>
                     </div>
                 </div>
-                <div id="shortcutListDiv">
-                    <h4>Quick shortcuts</h4>
-                    <div id="shortcutListContent" class="mainContent">
-                        Click on a chem to copy its recipe to the clipboard.
-                        <ul id="shortcutList">
-                        </ul>
+                <div id="shortcutListsContainer">
+                    <div id="generalShortcutListDiv" class="shortcutListDiv">
+                        <h4>General shortcuts</h4>
+                        <div class="mainContent shortcutListContent">
+                            Click on a chem to copy its recipe to the clipboard.
+                            <ul id="generalShortcutList">
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="medShortcutListDiv" class="shortcutListDiv">
+                        <h4>Medical shortcuts</h4>
+                        <div class="mainContent shortcutListContent">
+                            Click on a chem to copy its recipe to the clipboard.
+                            <ul id="medShortcutList">
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="funShortcutListDiv" class="shortcutListDiv">
+                        <h4>"FUN" shortcuts</h4>
+                        <div class="mainContent shortcutListContent">
+                            Click on a chem to copy its recipe to the clipboard.
+                            <ul id="funShortcutList">
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <script src="scripts/chem.js"></script>
             </div>
             <div id="teleContent" class="hidden">
                 Telescience
@@ -58,7 +77,7 @@
             </div>
         </div>
     </div>
-
+    <textarea id="copyBuffer" class="offscreen"></textarea>
     <script src="scripts/sidebar.js"></script>
 </body>
 </html>

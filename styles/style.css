@@ -15,6 +15,11 @@ html,body {
     display: none;
 }
 
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}
+
 header ul{
     list-style-type: none;
     margin: 0;
@@ -105,6 +110,7 @@ body {
     padding-left: 0;
     overflow-y: scroll;
     flex: 1 0 auto;
+    user-select: none;
 }
 
 #dynamicContent li{
@@ -144,12 +150,17 @@ body {
     height: 25vh;
 }
 
-#shortcutListDiv{
+#shortcutListsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.shortcutListDiv{
     margin: 10px 1% 0 1%;
-    width: 25%;
+    width: 30%;
     text-align: center;
 }
 
-#shortcutList{
+.shortcutListDiv ul{
     height: 20vh;
 }
