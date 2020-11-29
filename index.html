@@ -9,16 +9,42 @@
 <body>
     <header>
         <ul>
-            <li><button id="home" onclick="window.location = './index.html'">Home</button></li>
-            <li><button id="tool1" onclick="window.location = './tool1.html'">Chemistry Toolkit</button></li>
-            <li><button id="tool2" onclick="window.location = './tool2.html'">Telescience Toolkit</button></li>
-            <li><button id="tool3" onclick="window.location = './tool3.html'">Sentencing Calculator</button></li>
+            <li><button id="chemButton">Chemistry Toolkit</button></li>
+            <li><button id="teleButton">Telescience Toolkit</button></li>
+            <li><button id="sentButton">Sentencing Calculator</button></li>
         </ul>
     
         <script src="scripts/navbar.js"></script>
     </header>
     <div id="pageContent">
         <div id="dynamicContent">
+            <div id="chemContent">
+                <div id="recipeToolDiv">
+                    <h4>Recipe list</h4>
+                    <div id="recipeContent" class="mainContent">
+                        <ul id="recipeList">
+                        </ul>
+                        <Textarea>
+                
+                        </Textarea>
+                    </div>
+                </div>
+                <div id="shortcutListDiv">
+                    <h4>Quick shortcuts</h4>
+                    <div id="shortcutListContent" class="mainContent">
+                        Click on a chem to copy its recipe to the clipboard.
+                        <ul id="shortcutList">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="teleContent" class="hidden">
+                Telescience
+            </div>
+            <div id="sentenceContent" class="hidden">
+                Sentencing
+
+            </div>
         </div>
         <div id="sidebar">
             <div class="sidebarEntry" id="Doors">
