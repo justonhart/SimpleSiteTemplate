@@ -6,17 +6,33 @@
     <title>Tools</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<header>
-    <ul>
-        <li><button id="home" onclick="window.location = './index.html'">Home</button></li>
-        <li><button id="tool1" onclick="window.location = './tool1.html'">Tool1</button></li>
-        <li><button id="tool2" onclick="window.location = './tool2.html'">Tool2</button></li>
-        <li><button id="tool3" onclick="window.location = './tool3.html'">Tool3</button></li>
-    </ul>
-
-    <script src="scripts/navbar.js"></script>
-</header>
 <body>
-    <p>Welcome to my practice project! This is my attempt at implementing a simple static website.</p>
+    <header>
+        <ul>
+            <li><button id="home" onclick="window.location = './index.html'">Home</button></li>
+            <li><button id="tool1" onclick="window.location = './tool1.html'">Chemistry Toolkit</button></li>
+            <li><button id="tool2" onclick="window.location = './tool2.html'">Telescience Toolkit</button></li>
+            <li><button id="tool3" onclick="window.location = './tool3.html'">Sentencing Calculator</button></li>
+        </ul>
+    
+        <script src="scripts/navbar.js"></script>
+    </header>
+    <div id="pageContent">
+        <div id="dynamicContent">
+        </div>
+        <div id="sidebar">
+            <div class="sidebarEntry" id="Doors">
+                Doors
+            </div>
+            <div class="sidebarEntry" id="VendingMachines">
+                Vending Machines
+            </div>
+            <div class="sidebarEntry" id="Fabricators">
+                Fabricators
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/sidebar.js"></script>
 </body>
 </html>

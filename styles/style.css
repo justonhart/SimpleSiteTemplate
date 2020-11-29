@@ -4,6 +4,7 @@ html,body {
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
     margin: 0;
+    height: 100%;
 }
 
 header ul{
@@ -29,4 +30,53 @@ body {
     background-color: black;
     margin: auto;
     text-align: center;
+}
+
+#pageContent{
+    display: flex;
+    height: 96%;
+}
+
+#dynamicContent{
+    flex-basis: 75%;
+}
+
+#sidebar{
+    flex-basis: auto;
+    background-color: rgb(43, 43, 43);
+}
+
+.sidebarEntry{
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.sidebarRow{
+    display: flex;
+    padding: 5px 0;
+    user-select: none;
+}
+
+.rowLabel{
+    display: inline-block;
+    text-align: left;
+    width: 75px;
+}
+
+.buttonLabel span{
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid grey;
+    color: grey;
+    border-radius: 3px;
+}
+
+:checked + span{
+    border-color: white;
+    color: white;
+    background-color: rgb(121, 121, 121);
+}
+
+.sidebarRow input{
+    display: none;
 }
