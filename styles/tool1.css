@@ -26,6 +26,7 @@ header ul li button{
 }
 
 body{
+    display: flex;
     color: white;
     background-color: black;
     margin: auto;
@@ -34,9 +35,7 @@ body{
 
 #content{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
 }
 
 #shortcutListDiv{
