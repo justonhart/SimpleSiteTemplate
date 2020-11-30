@@ -146,8 +146,25 @@ body {
     flex: 2 0 auto;
 }
 
+#recipeListDiv{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
 #recipeList{
     height: 25vh;
+}
+
+
+#recipeSelect{
+    height: 2em;
+    margin: 0 7px;
+}
+
+#recipeButtons{
+    display: flex;
+    padding: 5px;
 }
 
 #shortcutListsContainer{
