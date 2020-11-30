@@ -123,6 +123,10 @@ body {
     padding: .25em 1em;
 }
 
+#dynamicContent li:active{
+    background-color: black;
+}
+
 /* Chem tools */
 
 #chemContent ul{
