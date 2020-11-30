@@ -46,8 +46,8 @@ body {
 }
 
 #sidebar{
-    flex-basis: auto;
     background-color: rgb(43, 43, 43);
+    width: 25%;
 }
 
 .sidebarEntry{
