@@ -182,17 +182,21 @@ function populateShortcutLists(){
     const medShortcuts = {
         "Styptic (add Sulfuric)" : "aluminium=20;oxygen=20;hydrogen=20;",
         "Silver Sulfadiazine (add 20 units of Ammonia)" : "silver=20;sulfur=20;oxygen=20;chlorine=20;",
-        "Mannitol" : "sugar=10;hydrogen=10;water=10;"
+        "Mannitol" : "sugar=10;hydrogen=10;water=10;",
+        "Cleaner (add Ammonia)" : "ethanol=10;water=10;",
+        "Formaldehyde" : "ethanol=10;oxygen=10;silver=10",
+        "Unstable Mutagen" : "radium=10;plasma=10;chlorine=10;",
     }
 
     const funShortcuts = {
         "Propellant (add stabilizer)" : "chlorine=10;sugar=10;hydrogen=10;platinum=10;",
         "Flash Powder (add 20 stabilizer)" : "aluminium=20;potassium=20;sulfur=20;chlorine=20;",
-        "Smoke Powder (add stabilizer)" : "potassium=10;sugar=10;phosphorous=10;",
-        "Thermite" : "oxygen=33;iron=33;aluminium=33;",
-        "Pyrosium" : "plasma=33;radium=33;phosphorous=33;",
+        "Smoke Powder (add stabilizer)" : "potassium=10;sugar=10;phosphorus=10;",
+        "Thermite" : "oxygen=10;iron=10;aluminium=10;",
+        "Pyrosium" : "plasma=10;radium=10;phosphorus=10;",
         "Fluorosulfuric Acid (add sulfuric)" : "fluorine=20;hydrogen=20;potassium=20;",
-        "Space Drugs" : "mercury=11;sugar=11;lithium=11;",
+        "Space Drugs" : "mercury=10;sugar=10;lithium=10;",
+        "Space Lube" : "water=10;silicon=10;oxygen=10",
         "Liquid Dark Matter (ADD STABILIZER!!)" : "plasma=20;radium=20;carbon=20",
     }
 
@@ -216,7 +220,7 @@ function populateShortcutLists(){
         for(const i in medShortcuts){
             const row = document.createElement("li");
             row.innerText = i;
-            row.onclick = () => {copy(shortcuts[i])};
+            row.onclick = () => {copy(medShortcuts[i])};
             list.appendChild(row);
         }
     }
